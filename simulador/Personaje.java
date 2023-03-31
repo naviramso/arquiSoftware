@@ -2,7 +2,7 @@ package simulador;
 import editor.Ambiente;
 
 public class Personaje{
-    Ambiente actual;
+    private Ambiente actual;
 
     public Personaje(Ambiente a){
         this.actual = a;
@@ -15,4 +15,6 @@ public class Personaje{
     public void setAmbienteActual(Ambiente a){
         this.actual = a; 
     }
+ 
+
 }

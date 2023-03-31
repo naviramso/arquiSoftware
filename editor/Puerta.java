@@ -7,6 +7,9 @@ public class Puerta extends Elemento{
     public Puerta(Ambiente ambiente){
         this.ambienteDestino=ambiente;
     }
+
+    public Puerta(){}
+    
     public void interactuar(Personaje personaje){
         personaje.setAmbienteActual(ambienteDestino);
     }
