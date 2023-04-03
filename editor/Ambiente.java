@@ -16,4 +16,8 @@ public class Ambiente extends Entorno {
     public void setElementos(Elemento e) {
         elementos.add(e);
     }
+
+    public ArrayList<Elemento> geElementos(){
+        return elementos;
+    }
 }

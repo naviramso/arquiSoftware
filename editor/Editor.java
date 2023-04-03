@@ -24,18 +24,17 @@ public class Editor {
         pb.setEntorno(bibliotecaPB);
         p2.setEntorno(bibliotecaP2);
         p2.setEntorno(oficinaAdministrativa);
-        Elemento puerta1 = new Puerta();
         Elemento puerta2 = new Puerta(prestamosLibros);
         Elemento puerta3 = new Puerta(bibliotecaP2);
         Elemento puerta4 = new Puerta(oficinaAdministrativa);
         Elemento puerta5 = new Puerta(bibliotecaPB);
-        bibliotecaPB.setElementos(puerta1);
-        bibliotecaPB.setElementos(puerta1);
         bibliotecaPB.setElementos(puerta2);
         bibliotecaPB.setElementos(puerta3);
+        prestamosLibros.setElementos(puerta5);
+        oficinaAdministrativa.setElementos(puerta3);
         bibliotecaP2.setElementos(puerta4);
-        bibliotecaP2.setElementos(puerta1);
         bibliotecaP2.setElementos(puerta5);
+
         return escenarioDePrueba;
     }
 }

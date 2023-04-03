@@ -17,7 +17,7 @@ public class Simulador {
         System.out.println("Corriendo el simulador");
         Entorno aux = entorno.getAmbiente();
         personaje.setAmbienteActual((Ambiente) aux);
-        personaje.getAmbienteActual()
+        personaje.interactuarElemento();
     }
 
 }

@@ -1,5 +1,8 @@
 package simulador;
+
 import editor.Ambiente;
+import editor.Elemento;
+import editor.Puerta;
 
 public class Personaje{
     private Ambiente actual;
@@ -16,5 +19,15 @@ public class Personaje{
         this.actual = a; 
     }
  
+    public void interactuarElemento(){
+        for (Elemento e : actual.geElementos()) {
+            System.out.println(actual.getNombre());
+            e.interactuar(this);
+        } 
+    }
+
+    public Ambiente getAmbienteActual(){
+        return actual; 
+    }
 
 }
